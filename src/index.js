@@ -1,17 +1,24 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
+import { render } from 'react-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import Home from './container/Home';
+import Varo from './container/varo/Varo';
+import ScrollToTop from './components/ScrollToTop';
+import Artist from './container/artist/Artist';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+const rootElement = document.getElementById("root");
+render( 
+  <BrowserRouter>
+    <ScrollToTop />
+      <Routes>
+          <Route path="/" element={ <App /> }>
+            <Route index element={ <Home /> } />
+            <Route path="varo" element={ <Varo /> }/>
+            <Route path="artist" element={ <Artist /> }/>
+          </Route>
+      </Routes>
+  </BrowserRouter>, 
+  rootElement 
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
