@@ -10,7 +10,7 @@ export default function Footer(){
     const img = () => {
         const imgArr = [];
         for ( let i = 0; i < 4; i++ ){
-            imgArr.push(<a href={address[i]}> <IconStyle key={i} src={require("../../styles/icon/icon"+i+".png")} /></a>);
+            imgArr.push(<a href={address[i]}> <IconStyle key={i} src={require("../../assets/icon/icon"+i+".png")} /></a>);
         }
 
         return imgArr;
@@ -31,7 +31,7 @@ const IconStyle = styled.img`
 
 const FooterWrapper = styled.div`
     width: 100%;
-    height: 80px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;

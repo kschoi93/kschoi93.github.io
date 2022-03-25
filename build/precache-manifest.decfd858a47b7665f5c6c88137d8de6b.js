@@ -1,19 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "e0507906992b9c2dfaa5",
-    "url": "/static/css/main.e0382ed6.chunk.css"
+    "revision": "94aa7e7635d3a366a7af",
+    "url": "/static/css/main.16ad6ed7.chunk.css"
   },
   {
-    "revision": "e0507906992b9c2dfaa5",
-    "url": "/static/js/main.e0507906.chunk.js"
+    "revision": "94aa7e7635d3a366a7af",
+    "url": "/static/js/main.94aa7e76.chunk.js"
   },
   {
-    "revision": "a6642c98340fe39e84d8",
-    "url": "/static/js/1.a6642c98.chunk.js"
+    "revision": "c0b2cc39f3bffc1eb4b5",
+    "url": "/static/js/1.c0b2cc39.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
     "url": "/static/js/runtime~main.229c360f.js"
+  },
+  {
+    "revision": "25505688a8c206baae40e6ec87b2f42c",
+    "url": "/static/media/logo.25505688.svg"
   },
   {
     "revision": "7b972e43f4cb5f6ad4e9356ca61b9184",
@@ -64,27 +68,27 @@ self.__precacheManifest = [
     "url": "/static/media/9.b48c0da1.jpg"
   },
   {
-    "revision": "bd40fbb71afb944c3da30d5ec7f3879f",
-    "url": "/static/media/1.bd40fbb7.jpg"
+    "revision": "dd0787182b59a726a682247f43ef1f93",
+    "url": "/static/media/ci0.dd078718.png"
   },
   {
-    "revision": "5c7048e330f24f0e6b5e27059c6afb42",
-    "url": "/static/media/2.5c7048e3.jpg"
+    "revision": "c4baf17b47f03b14812acd70c4c147fc",
+    "url": "/static/media/ci1.c4baf17b.png"
   },
   {
-    "revision": "65d6b243269feb53696010549aac36b4",
-    "url": "/static/media/3.65d6b243.jpg"
+    "revision": "1adc26e2822e5c57d031263a03d67eb9",
+    "url": "/static/media/ci2.1adc26e2.png"
   },
   {
-    "revision": "0c09256082e6ddd253b972a65996247f",
-    "url": "/static/media/4.0c092560.jpg"
+    "revision": "cddac8b2725130ac6a2a8dbd022d687d",
+    "url": "/static/media/ci3.cddac8b2.png"
   },
   {
-    "revision": "7b972e43f4cb5f6ad4e9356ca61b9184",
-    "url": "/static/media/5.7b972e43.jpg"
+    "revision": "473ba03778ce03dbe503d5e64eb26e86",
+    "url": "/static/media/ci4.473ba037.png"
   },
   {
-    "revision": "dd8568c982ced01b6ae49222845adcc0",
+    "revision": "4b01a31ad661fb2dd5d22bb08a2f4586",
     "url": "/index.html"
   }
 ];

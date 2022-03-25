@@ -1,28 +1,28 @@
 import React, { useState, useCallback } from "react";
-import { render } from "react-dom";
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
 
-import { photos } from "./photos/Gong";
+import { photos } from "./photos/Gsy";
+
 
 export default function Artist(){
-    const [currentImage, setCurrentImage] = useState(0);
-    const [viewerIsOpen, setViewerIsOpen] = useState(false);
-  
-    const openLightbox = useCallback((event, { photo, index }) => {
-      setCurrentImage(index);
-      setViewerIsOpen(true);
-    }, []);
-  
-    const closeLightbox = () => {
-      setCurrentImage(0);
-      setViewerIsOpen(false);
-    };
 
-    return(
-        <div styles={{weight:'80%'}}>
-                <div>
-      <Gallery photos={photos} onClick={openLightbox} margin={10} />
+  const [currentImage, setCurrentImage] = useState(0);
+  const [viewerIsOpen, setViewerIsOpen] = useState(false);
+
+  const openLightbox = useCallback((event, { photo, index }) => {
+    setCurrentImage(index);
+    setViewerIsOpen(true);
+  }, []);
+
+  const closeLightbox = () => {
+    setCurrentImage(0);
+    setViewerIsOpen(false);
+  };
+
+  return (
+    <div>
+      <Gallery photos={photos} onClick={openLightbox} direction={"row"}/>
       <ModalGateway>
         {viewerIsOpen ? (
           <Modal onClose={closeLightbox}>
@@ -38,6 +38,5 @@ export default function Artist(){
         ) : null}
       </ModalGateway>
     </div>
-        </div>
-    );
+  );
 }

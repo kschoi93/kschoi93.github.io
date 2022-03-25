@@ -31,18 +31,18 @@ export default function Header(){
     return(
         <HeaderWrapper>
             <header style={isPc ? headerPcStyle : headerMobileStyle} >
-                <Link to="/"><img src={process.env.PUBLIC_URL + '/assets/icon/logo.svg'} style={{verticalAlign:"middle"}}/></Link>
+                <Link to="/"><img src={require('../../assets/logo.svg')} style={{verticalAlign:"middle", width:'180px'}}/></Link>
                 <MainMenu>
                     <MainMenuItem onMouseEnter={()=>{setVaroVisible('block')}} onMouseLeave={()=>{setVaroVisible('none')}}>
-                        <LinkStyle to='/varo'>VARO</LinkStyle>
+                        <LinkStyle to='varo/about-us'>VARO</LinkStyle>
                         <SubMenu style={{display:varoVisible}}>
-                            <SubMenuItem><LinkStyle to="about_us">ABOUT US</LinkStyle></SubMenuItem>
-                            <SubMenuItem><LinkStyle to="CI">CI</LinkStyle></SubMenuItem>
-                            <SubMenuItem><LinkStyle to="CONTACT">CONTACT</LinkStyle></SubMenuItem>
+                            <SubMenuItem><LinkStyle to="varo/about-us">ABOUT US</LinkStyle></SubMenuItem>
+                            <SubMenuItem><LinkStyle to="varo/ci">CI</LinkStyle></SubMenuItem>
+                            <SubMenuItem><LinkStyle to="varo/contact">CONTACT</LinkStyle></SubMenuItem>
                         </SubMenu>
                     </MainMenuItem>
                     <MainMenuItem onMouseEnter={()=>{setArtistVisible('block')}} onMouseLeave={()=>{setArtistVisible('none')}}>
-                        <LinkStyle to="/artist">ARTIST</LinkStyle>
+                        <LinkStyle to="artist">ARTIST</LinkStyle>
                         <SubMenu style={{display:artistVisible}}>
                             <SubMenuItem><LinkStyle to="artist/1">GONG SEUNG YEON</LinkStyle></SubMenuItem>
                             <SubMenuItem><LinkStyle to="artist/2">BYEON WOO SEOK</LinkStyle></SubMenuItem>
