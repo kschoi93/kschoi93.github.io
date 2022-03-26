@@ -1,0 +1,50 @@
+{
+    "title": "BYEON WOO SEOK",
+    "iconRef": [
+        "https://www.instagram.com/byeonwooseok/",
+        "#",
+        "#",
+        "https://m.post.naver.com/my.nhn?memberNo=51243517"
+    ],
+    "imageRef": "../../assets/img/artist/byeonwooseok.jpg",
+    "artistInfo":"변우석 / 1991년생",
+    "Content": [
+        {
+            "contentTitle": "방송",
+            "contentSection": [
+                "2016 tvN <디어 마이 프렌즈> 종식 역",
+                "2016 SBS <보보경심 려> 기동 역",
+                "2016-2017 MBC <역도요정 김복주> 김복주 선배 역",
+                "2017 웹드라마 <전지적 짝사랑 시점 3> 우석 역",
+                "2017 tvN 드라마스테이지<직립보행의 역사> 종민 역",
+                "2018 tvN <모두의 연애> 우석 역",
+                "2019 JTBC <으라차차 와이키키 2> 윤서준 역",
+                "2019 tvN <김색어를 입력하세요:WWW> 한민규 역",
+                "2019 JTBC <조선혼담공작소 꽃파당> 도준 역",
+                "2020 tvN <청춘기록> 원해효 역"
+            ]
+        },
+        {
+            "contentTitle": "영화",
+            "contentSection": [
+                "2021 <소울메이트> 진우 역"
+            ]
+        },
+        {
+            "contentTitle": "광고",
+            "contentSection": [
+                "갤럭시 기어 S3",
+                "르꼬끄 스포르티브",
+                "엘바인",
+                "엘르스포츠",
+                "잭앤질",
+                "에이치커넥트",
+                "선덕제주",
+                "팬텀골프웨어",
+                "삼성 비스포크 에어드레서",
+                "까웨",
+                "bench"
+            ]
+        }
+    ]
+}

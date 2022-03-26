@@ -1,0 +1,36 @@
+{
+    "title": "PARK JUNG WOO",
+    "iconRef": [
+        "https://www.instagram.com/jjung_woo_/",
+        "#",
+        "#",
+        "https://m.post.naver.com/my.nhn?memberNo=51243517"
+    ],
+    "imageRef": "../../assets/img/artist/parkjungwoo.jpg",
+    "artistInfo":"박정우 / 1996년생",
+    "Content": [
+        {
+            "contentTitle": "방송",
+            "contentSection": [
+                "2017 웹드라마 <연애플레이리스트 시즌 1> 강윤 역",
+                "2017 웹드라마 <연애플레이리스트 시즌 2> 강윤 역",
+                "2019 웹드라마 <연애플레이리스트 시즌 4> 강윤 역",
+                "2020 OCN <번외수사> 민대진 역",
+                "2020 tvN <슬기로운 의사생활> 장겨울 남동생 역",
+                "2021 JTBC <날아올라라 나비> 무열 역"
+            ]
+        },
+        {
+            "contentTitle": "광고",
+            "contentSection": [
+                "멜론 X 카카오미니",
+                "유니클로",
+                "구글 어시스턴트",
+                "아시아나항공 뉴욕편",
+                "아임닭",
+                "라로슈포제",
+                "삼성 갤럭시 To go 서비스 : fold 2, Z flip"
+            ]
+        }
+    ]
+}

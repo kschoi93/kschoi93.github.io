@@ -5,7 +5,9 @@ import { useMediaQuery } from "react-responsive";
 // import SideMenuBar from '../component/sideMenuBar';
 
 export default function Header(){
-    const isPc = useMediaQuery({ query: "(min-width: 776px)"});
+    const isMobile = useMediaQuery({ query: "(min-width: 776px)"});
+    const isPc = useMediaQuery({ query: "(min-width: 1300px)"});
+    const isPcTablet = useMediaQuery({ query: "(min-width: 1024px)"});
 
     const [varoVisible, setVaroVisible] = useState('none');
     const [artistVisible, setArtistVisible] = useState('none');
@@ -30,19 +32,19 @@ export default function Header(){
 
     return(
         <HeaderWrapper>
-            <header style={isPc ? headerPcStyle : headerMobileStyle} >
+            <header style={isMobile ? headerPcStyle : headerMobileStyle} >
                 <Link to="/"><img src={require('../../assets/logo.svg')} style={{verticalAlign:"middle", width:'180px'}}/></Link>
                 <MainMenu>
                     <MainMenuItem onMouseEnter={()=>{setVaroVisible('block')}} onMouseLeave={()=>{setVaroVisible('none')}}>
-                        <LinkStyle to='varo/about-us'>VARO</LinkStyle>
+                        <LinkStyle to='company/about-us'>COMPANY</LinkStyle>
                         <SubMenu style={{display:varoVisible}}>
-                            <SubMenuItem><LinkStyle to="varo/about-us">ABOUT US</LinkStyle></SubMenuItem>
-                            <SubMenuItem><LinkStyle to="varo/ci">CI</LinkStyle></SubMenuItem>
-                            <SubMenuItem><LinkStyle to="varo/contact">CONTACT</LinkStyle></SubMenuItem>
+                            <SubMenuItem><LinkStyle to="company/about-us">ABOUT US</LinkStyle></SubMenuItem>
+                            <SubMenuItem><LinkStyle to="company/ci">CI</LinkStyle></SubMenuItem>
+                            <SubMenuItem><LinkStyle to="company/contact">CONTACT</LinkStyle></SubMenuItem>
                         </SubMenu>
                     </MainMenuItem>
                     <MainMenuItem onMouseEnter={()=>{setArtistVisible('block')}} onMouseLeave={()=>{setArtistVisible('none')}}>
-                        <LinkStyle to="artist">ARTIST</LinkStyle>
+                        <LinkStyle to="artist/1">ARTIST</LinkStyle>
                         <SubMenu style={{display:artistVisible}}>
                             <SubMenuItem><LinkStyle to="artist/1">GONG SEUNG YEON</LinkStyle></SubMenuItem>
                             <SubMenuItem><LinkStyle to="artist/2">BYEON WOO SEOK</LinkStyle></SubMenuItem>
@@ -83,15 +85,15 @@ export default function Header(){
 const SubMenuItem = styled.li`
 	text-align: center;
 	width: 150px;
-	height: 50px;
-	line-height: 50px;
+	height: 35px;
+	line-height: 35px;
 	padding: 0;
 	margin: 0;
 	position: relative;
 	z-index: 2000;
 	list-style: none;
 	font-size: 0.7em;
-	color: gray;
+	color: #ECECEC;
 	&:hover{
 	    color: black;
 	}
@@ -102,6 +104,7 @@ const SubMenu = styled.ul`
 	margin: 0;
 	display: none;
 	list-style: none;
+    transition:visibility 0.3s linear,opacity 0.3s linear;
 `;
 
 const MainMenuItem = styled.li`

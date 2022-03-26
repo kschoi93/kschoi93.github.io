@@ -1,9 +1,9 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-
 import styled from 'styled-components';
 
 export default function Home(){
+
     const img = () => {
         const imgArr = [];
         for ( let i = 0; i < 12; i++ ){

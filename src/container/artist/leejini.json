@@ -1,0 +1,47 @@
+{
+    "title": "LEE JINI",
+    "iconRef": [
+        "https://www.instagram.com/jinilee0126/",
+        "#",
+        "https://www.youtube.com/channel/UClWqMa92REL46AWV6xDpb8g",
+        "https://m.post.naver.com/my.nhn?memberNo=51243517"
+    ],
+    "imageRef": "../../assets/img/artist/leejini.jpg",
+    "artistInfo":"이진이 / 1999년생",
+    "Content": [
+        {
+            "contentTitle": "방송",
+            "contentSection": [
+                "2016 SBS <미스터리 신입생> 주연 정은 역",
+                "2017 웹드라마 <전지적 짝사랑 시점 시즌3> 진이 역",
+                "2017 tvN <드라마 스테이지 - 직립 보행의 역사> 진이 역",
+                "2019 미국 드라마 <트레드스톤> 권장미 역"
+            ]
+        },
+        {
+            "contentTitle": "영화",
+            "contentSection": [
+                "2019 <너의 여자친구> 하나 역"
+            ]
+        },
+        {
+            "contentTitle": "방송 프로그램",
+            "contentSection": [
+                "2015 SBS <고교10대천왕>",
+                "2015 TV조선 <엄마가 뭐길래>",
+                "2016 JTBC <오늘, 굿데이> 진행",
+                "2018 JTBC4 <마이 매드 뷰티 2> 진행",
+                "2019 FashionN <매일불금> 진행"
+            ]
+        },
+        {
+            "contentTitle": "광고",
+            "contentSection": [
+                "럭키슈에뜨",
+                "힐크릭 골프웨어",
+                "듀베티카",
+                "시스티나"
+            ]
+        }
+    ]
+}
