@@ -1,39 +1,47 @@
 self.__precacheManifest = [
   {
-    "revision": "0194136265ed3c3d5aad",
-    "url": "/static/css/main.07b47298.chunk.css"
+    "revision": "256a6a360c5ce65d90f8",
+    "url": "/static/css/main.1c08cdcc.chunk.css"
   },
   {
-    "revision": "0194136265ed3c3d5aad",
-    "url": "/static/js/main.01941362.chunk.js"
+    "revision": "256a6a360c5ce65d90f8",
+    "url": "/static/js/main.256a6a36.chunk.js"
   },
   {
-    "revision": "d2bf519fe73b7219bd3c",
-    "url": "/static/js/1.d2bf519f.chunk.js"
+    "revision": "cc700ce1bd02eb392c0f",
+    "url": "/static/js/1.cc700ce1.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
     "url": "/static/js/runtime~main.229c360f.js"
   },
   {
-    "revision": "bd40fbb71afb944c3da30d5ec7f3879f",
-    "url": "/static/media/1.bd40fbb7.jpg"
+    "revision": "cc43b9bc8d0839c38b9fd950be9c00f1",
+    "url": "/static/media/gongseungyeon.cc43b9bc.jpg"
   },
   {
-    "revision": "5c7048e330f24f0e6b5e27059c6afb42",
-    "url": "/static/media/2.5c7048e3.jpg"
+    "revision": "59335e4fe47cd0430495428dd0fa8f2c",
+    "url": "/static/media/byeonwooseok.59335e4f.jpg"
   },
   {
-    "revision": "65d6b243269feb53696010549aac36b4",
-    "url": "/static/media/3.65d6b243.jpg"
+    "revision": "e5cdab5dec98e6ce14d0dbd3813c1944",
+    "url": "/static/media/parkjungwoo.e5cdab5d.jpg"
   },
   {
-    "revision": "0c09256082e6ddd253b972a65996247f",
-    "url": "/static/media/4.0c092560.jpg"
+    "revision": "d17f83a9e1b36a80156f3a1f2e430337",
+    "url": "/static/media/leeyoumi.d17f83a9.jpg"
   },
   {
-    "revision": "7b972e43f4cb5f6ad4e9356ca61b9184",
-    "url": "/static/media/5.7b972e43.jpg"
+    "revision": "d1015c5ec28254ab74a74cf01320b491",
+    "url": "/static/media/leejini.d1015c5e.jpg"
+  },
+  {
+    "revision": "c962f5a35e642d75f1a2f05c1df5252e",
+    "url": "/static/media/jingoo.c962f5a3.jpg"
+  },
+  {
+    "revision": "550de3fa993461375fe2093f935ff32e",
+    "url": "/static/media/map.550de3fa.png"
   },
   {
     "revision": "25505688a8c206baae40e6ec87b2f42c",
@@ -108,11 +116,7 @@ self.__precacheManifest = [
     "url": "/static/media/ci4.473ba037.png"
   },
   {
-    "revision": "550de3fa993461375fe2093f935ff32e",
-    "url": "/static/media/map.550de3fa.png"
-  },
-  {
-    "revision": "ad71d51e09e8ac6d41d2b503f6db2dfc",
+    "revision": "6f99730a69b1942d1f516338f33f7965",
     "url": "/index.html"
   }
 ];
