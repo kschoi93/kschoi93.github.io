@@ -1,0 +1,52 @@
+{
+    "title": "LEE HONG NAE",
+    "iconRef": [
+        "https://www.instagram.com/leehongnae_nim/",
+        "https://www.facebook.com/seeyoulaterleehongnae/",
+        "#",
+        "https://m.post.naver.com/my.nhn?memberNo=51243517"
+    ],
+    "imageRef": "../../assets/img/artist/leehongnae.jpg",
+    "artistInfo":"이홍내 / 1990년생",
+    "Content": [
+        {
+            "contentTitle": "드라마",
+            "contentSection": [
+                "2016 MBC 웹툰히어로 툰드라쇼 시즌2 - 꽃가족 학교짱 역",
+                "2016 KBS 드라마 스페셜 - 전설의 셔틀 성호무리1 역",
+                "2017 MBC 구해줘 이경수 역",
+                "2018 Oksusu 독고 리와인드 신도윤 역",
+                "2019 OCN 트랩",
+                "2019 tvN 유령을 잡아라 구동만 역",
+                "2020 SBS 더 킹 : 영원의 군주 석호필 역",
+                "2020 OCN 경이로운 소문 지청신 역",
+                "2021 JTBC 구경이 건욱 역"
+            ]
+        },
+        {
+            "contentTitle": "영화",
+            "contentSection": [
+                "2014 지옥화 (지석) 역",
+                "2015 살인재능 (연우 친구들) 역",
+                "2016 위대한 소원 (조깅남) 역",
+                "2018 나를 기억해 (세정 친구1) 역",
+                "2018 상류사회 (인턴) 역",
+                "2018 도어락 (경찰2) 역",
+                "2019 타짜 : 원 아이드 잭 (보디가드2) 역",
+                "2019 판소리 복서 (황소체육관 코치) 역",
+                "2019 신의 한 수 : 귀수편 (들개) 역",
+                "2020 침입자 (실종 경찰관) 역",
+                "2020 국제수사 (패트릭가드2) 역",
+                "2021 메이드 인 루프탑 (하늘) 역",
+                "2021 유체이탈자 (늑대) 역",
+                "2022 뜨거운 피 (아미) 역"
+            ]
+        },
+        {
+            "contentTitle": "광고",
+            "contentSection": [
+                "르노삼성 XM3"
+            ]
+        }
+    ]
+}

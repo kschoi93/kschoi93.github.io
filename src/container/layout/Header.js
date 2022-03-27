@@ -2,13 +2,12 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { useMediaQuery } from "react-responsive";
-// import SideMenuBar from '../component/sideMenuBar';
+import SideMenu from './SideMenu';
 
 export default function Header(){
     const isMobile = useMediaQuery({ query: "(min-width: 776px)"});
-    const isPc = useMediaQuery({ query: "(min-width: 1300px)"});
-    const isPcTablet = useMediaQuery({ query: "(min-width: 1024px)"});
 
+    /** SubMenu */
     const [varoVisible, setVaroVisible] = useState('none');
     const [artistVisible, setArtistVisible] = useState('none');
 
@@ -30,19 +29,35 @@ export default function Header(){
         justifyContent: 'space-between'
     };
 
+    
+    const HeaderWrapperMobile ={
+        height: '80px',
+        lineHeight: '80px',
+        boxShadow: '0px 0px 10px #D8D8D8'
+    };
+
+    const HeaderWrapper = {
+        height: '100px',
+        lineHeight: '100px',
+        boxShadow: '0px 0px 10px #D8D8D8'
+    };
+
+    const LogoWrapperMobile = {
+        width: '100px',
+        verticalAlign: 'middle'
+    };
+
+    const LogoWrapper = {
+        width: '180px',
+        verticalAlign: 'middle'
+    };
+
     return(
-        <HeaderWrapper>
-            <header style={isMobile ? headerPcStyle : headerMobileStyle} >
-                <Link to="/"><img src={require('../../assets/logo.svg')} style={{verticalAlign:"middle", width:'180px'}}/></Link>
+        <div style={isMobile ? HeaderWrapper : HeaderWrapperMobile}>
+            <header style={isMobile ? headerPcStyle : headerMobileStyle} >            
+                <Link to="/"><img src={require('../../assets/logo.svg')} style={isMobile ? LogoWrapper : LogoWrapperMobile}/></Link>
+                { isMobile ?
                 <MainMenu>
-                    <MainMenuItem onMouseEnter={()=>{setVaroVisible('block')}} onMouseLeave={()=>{setVaroVisible('none')}}>
-                        <LinkStyle to='company/about-us'>COMPANY</LinkStyle>
-                        <SubMenu style={{display:varoVisible}}>
-                            <SubMenuItem><LinkStyle to="company/about-us">ABOUT US</LinkStyle></SubMenuItem>
-                            <SubMenuItem><LinkStyle to="company/ci">CI</LinkStyle></SubMenuItem>
-                            <SubMenuItem><LinkStyle to="company/contact">CONTACT</LinkStyle></SubMenuItem>
-                        </SubMenu>
-                    </MainMenuItem>
                     <MainMenuItem onMouseEnter={()=>{setArtistVisible('block')}} onMouseLeave={()=>{setArtistVisible('none')}}>
                         <LinkStyle to="artist/1">ARTIST</LinkStyle>
                         <SubMenu style={{display:artistVisible}}>
@@ -55,31 +70,24 @@ export default function Header(){
                             <SubMenuItem><LinkStyle to="artist/7">LEE HONG NAE</LinkStyle></SubMenuItem>
                         </SubMenu>
                     </MainMenuItem>
+                    <MainMenuItem onMouseEnter={()=>{setVaroVisible('block')}} onMouseLeave={()=>{setVaroVisible('none')}}>
+                        <LinkStyle to='company/about-us'>COMPANY</LinkStyle>
+                        <SubMenu style={{display:varoVisible}}>
+                            <SubMenuItem><LinkStyle to="company/about-us">ABOUT US</LinkStyle></SubMenuItem>
+                            <SubMenuItem><LinkStyle to="company/ci">CI</LinkStyle></SubMenuItem>
+                            <SubMenuItem><LinkStyle to="company/contact">CONTACT</LinkStyle></SubMenuItem>
+                        </SubMenu>
+                    </MainMenuItem>
                     <MainMenuItem>
                         <LinkStyle to="audition">AUDITION</LinkStyle>
                     </MainMenuItem>
                 </MainMenu>
+                : <SideMenu/>
+                }
             </header>
-        </HeaderWrapper>
+        </div>
     );
 }
-
-//                { isPc ?
-//                    <Navbar className="ms-auto" bg="white" expand="lg">
-//                      <Container>
-//                        <Navbar.Brand href="/"></Navbar.Brand>
-//                        <Navbar.Toggle aria-controls="basic-navbar-nav"/>
-//                        <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
-//                          <Nav>
-//                            <Nav.Link href="/VARO">VARO</Nav.Link>
-//                            <Nav.Link href="/ARTIST">ARTIST</Nav.Link>
-//                            <Nav.Link href="/AUDITION">AUDITION</Nav.Link>
-//                          </Nav>
-//                        </Navbar.Collapse>
-//                      </Container>
-//                    </Navbar>
-//                    : <SideMenuBar />
-//                }
 
 
 const SubMenuItem = styled.li`
@@ -140,9 +148,4 @@ const LinkStyle = styled(Link)`
     &:hover{
         color: black;
     }
-`;
-
-const HeaderWrapper = styled.div`
-    height: 100px;
-    line-height: 100px;
 `;

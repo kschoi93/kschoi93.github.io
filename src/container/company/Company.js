@@ -25,12 +25,12 @@ export default function Varo() {
 
 const WrapperPc = styled.div`
     width: 100%;
-    padding: 50px 15px;
+    padding: 80px 15px;
     margin: 0 auto;
 `;
 
 const Wrapper = styled.div`
     width: 70vw;
-    padding: 50px 0;
+    padding: 80px 0;
     margin: 0 auto;
 `;

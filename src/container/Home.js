@@ -1,17 +1,19 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
+import { useMediaQuery } from "react-responsive";
 import styled from 'styled-components';
 
 export default function Home(){
+    const isMobile = useMediaQuery({ query: "(min-width: 776px)"});
 
-    const img = () => {
+    const img = (forder) => {
         const imgArr = [];
         for ( let i = 0; i < 12; i++ ){
             imgArr.push(
                 <Carousel.Item>
                     <img key={i} 
                          className="d-block w-100" 
-                         src={require("../assets/img/main/"+i+".jpg")}/>
+                         src={require("../assets/img/"+ forder +"/"+i+".jpg")}/>
                 </Carousel.Item>
             );
         }
@@ -22,10 +24,14 @@ export default function Home(){
         <>
             <CarouselWrapper 
                 fade 
-                interval={'2000'} 
+                interval={'3000'} 
                 slide={'false'} 
                 indicators={'false'}>
-              {img()}
+            {isMobile ?
+              img('main')
+            :
+              img('sub')
+            }
             </CarouselWrapper>
         </>
     );

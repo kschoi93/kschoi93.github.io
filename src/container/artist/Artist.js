@@ -8,6 +8,7 @@ import PJW from './parkjungwoo.json';
 import LYM from './leeyoumi.json';
 import LJI from './leejini.json';
 import JG from './jingoo.json';
+import LHN from './leehongnae.json';
 
 import GSYImage from '../../assets/img/artist/gongseungyeon.jpg';
 import BWSImage from '../../assets/img/artist/byeonwooseok.jpg';
@@ -15,11 +16,11 @@ import PJWImage from '../../assets/img/artist/parkjungwoo.jpg';
 import LYMImage from '../../assets/img/artist/leeyoumi.jpg';
 import LJIImage from '../../assets/img/artist/leejini.jpg';
 import JGImage from '../../assets/img/artist/jingoo.jpg';
+import LHNImage from '../../assets/img/artist/leehongnae.jpg';
 
 
 export default function Artist(props){
   const isMobile = useMediaQuery({ query: "(min-width: 776px)"});
-  const isTablet = useMediaQuery({ query: "(min-width: 1024px)"});
   const isPc = useMediaQuery({ query: "(min-width: 1300px)"});
   const artistInfoData = (number) => {
     if(number === 1){
@@ -40,6 +41,9 @@ export default function Artist(props){
     } else if(number === 6){
       setMainImage(JGImage);
       return JG;
+    } else if(number === 7){
+      setMainImage(LHNImage);
+      return LHN;
     } else {
       setMainImage(GSYImage);
       return GSY;
@@ -70,6 +74,9 @@ export default function Artist(props){
     } else if(number === 6){
       setMainImage(JGImage);
       setData(JG);
+    } else if(number === 7){
+      setMainImage(LHNImage);
+      setData(LHN);
     } else {
       setMainImage(GSYImage);
       setData(GSY);
@@ -193,7 +200,8 @@ const InfoContentWrapperMobile = styled.div`
 `;
 
 const InfoTitleMobile = styled.div`
-  font-size: 17px;
+  font-size: 17px;  
+  font-weight: bold;
 `;
 
 const ArtistInfoMobile = styled.div`
@@ -243,7 +251,8 @@ const InfoContentWrapper = styled.div`
 `;
 
 const InfoTitle = styled.div`
-  font-size: 22px;
+  font-size: 24px;
+  font-weight: bold;
 `;
 
 const ArtistInfo = styled.div`
