@@ -55,13 +55,13 @@ const ManagerSubWrapperMobile = styled.div`
 
 const MangarWrapperMobile = styled.div`
     padding: 10px 0;
-    font-size: 12px;
+    font-size: 11px;
 `;
 
 const PhoneMobile = styled.p`
-    padding: 30px 50px 50px 0;
+    padding: 30px 20px 50px 0;
     text-align: start;
-    font-size: 15px;
+    font-size: 14px;
 `;
 
 

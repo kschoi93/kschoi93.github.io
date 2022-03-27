@@ -14,7 +14,7 @@ export default function SideMenu(){
     return(
         <>
             <ButtonWrapper onClick={handleShow} >
-                <img src={require('../../assets/berger.svg')} style={{verticalAlign:"middle", width:'35px'}}/>
+                <img src={require('../../assets/berger.svg')} style={{verticalAlign:"middle", width:'35px', height:'35px'}}/>
             </ButtonWrapper>
             <Offcanvas show={show} onHide={handleClose} placement={'end'} name={'end'} style={{zIndex:2090}} width={100} transitionDuration={100}>
                 <Offcanvas.Header closeButton>
@@ -44,6 +44,7 @@ export default function SideMenu(){
 }
 
 const ButtonWrapper = styled.div`
+    height: 50px;
     &:hover { 
         color: black; 
         text-decoration: underline;
@@ -57,8 +58,8 @@ const ButtonWrapper = styled.div`
 
 const LinkSubMenu = styled(Link)`
     display:block;
-    height: 40px;
-    line-height: 40px;
+    height: 30px;
+    line-height: 30px;
     text-decoration: none;
     color: gray;
     &:hover{
@@ -70,8 +71,8 @@ const LinkSubMenu = styled(Link)`
 
 const LinkMenu = styled(Link)`
     display:block;
-    height: 50px;
-    line-height: 50px;
+    height: 30px;
+    line-height: 30px;
     border-bottom: 1px solid #D8D8D8;
     text-decoration: none;
     color: gray;
