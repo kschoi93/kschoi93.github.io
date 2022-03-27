@@ -41,7 +41,7 @@ export default function Contact(){
                 <MangarWrapperMobile>[ 홍보팀 / 팬 커뮤니케이션(서포트 및 기타 관련) 문의 ]</MangarWrapperMobile>
                 <ManagerSubWrapperMobile>▶ varoent@daum.net</ManagerSubWrapperMobile>
                 <MangarWrapperMobile>[ 오디션, 프로필 접수 ]</MangarWrapperMobile>
-                <ManagerSubWrapperMobile>▶ varoaudition@daum.net</ManagerSubWrapperMobile>
+                <ManagerSubWrapperMobile>▶ varoent@daum.net</ManagerSubWrapperMobile>
                 </>
             }
         </>
