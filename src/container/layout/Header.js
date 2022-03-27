@@ -101,7 +101,6 @@ const SubMenuItem = styled.li`
 	z-index: 2000;
 	list-style: none;
 	font-size: 0.7em;
-	color: #ECECEC;
 	&:hover{
 	    color: black;
 	}
@@ -131,7 +130,7 @@ const MainMenu = styled.ul`
     display: flex;
     a{
         text-decoration:none;
-        color: rgba(0, 0, 0, 0.55);
+        color: #B3B3B3EE;
     }
 
     &:hover{
@@ -140,9 +139,10 @@ const MainMenu = styled.ul`
 
 const LinkStyle = styled(Link)`
     textDecoration: none;
-    color: gray;
+    text-shadow: -0.01px 0 #DADADAEE, 0 0.01px #DADADAEE, 0.01px 0 #DADADAEE, 0 -0.01px #DADADAEE;
     &:focus, &:hover, &:visited, &:link, &:active {
         text-decoration: none;
+        text-shadow: none;
     }
 
     &:hover{
