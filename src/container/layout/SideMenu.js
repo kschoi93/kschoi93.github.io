@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
@@ -58,8 +57,8 @@ const ButtonWrapper = styled.div`
 
 const LinkSubMenu = styled(Link)`
     display:block;
-    height: 30px;
-    line-height: 30px;
+    height: 40px;
+    line-height: 40px;
     text-decoration: none;
     color: gray;
     &:hover{
@@ -71,8 +70,8 @@ const LinkSubMenu = styled(Link)`
 
 const LinkMenu = styled(Link)`
     display:block;
-    height: 30px;
-    line-height: 30px;
+    height: 50px;
+    line-height: 50px;
     border-bottom: 1px solid #D8D8D8;
     text-decoration: none;
     color: gray;
@@ -81,4 +80,5 @@ const LinkMenu = styled(Link)`
     }
     text-indent: 1rem;
     font-weight: bold;
+    margin-top: 20px;
 `;
